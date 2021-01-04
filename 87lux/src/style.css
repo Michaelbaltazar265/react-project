@@ -1,0 +1,10 @@
+.navbar-nav.navbar-center {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+} 
+
+.container { 
+    padding: 20px;
+}
