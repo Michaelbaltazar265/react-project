@@ -8,8 +8,6 @@ const App = () => {
     return (
         <div className='ui container comments'>
             <ApprovelCard> Are you sure you want to do this?</ApprovelCard>
-
-
             <ApprovelCard>
                 < CommentDetail author="Sam" timeAgo="Today at 4:30PM" commentText="Nice blog post!" />
             </ApprovelCard>
@@ -19,8 +17,6 @@ const App = () => {
             <ApprovelCard>
                 < CommentDetail author="Jane" timeAgo="Today at 10:30PM" commentText="No way thats really cool" />
             </ApprovelCard>
-            {/* < CommentDetail />
-            < CommentDetail /> */}
         </div>
 
     );
