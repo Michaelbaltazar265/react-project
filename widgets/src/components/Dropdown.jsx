@@ -1,20 +1,31 @@
-import React from 'react';
+import React from "react";
 
+const Dropdown = ({ options, selected, onSelectedChange }) => {
+  const renderedOptions = options.map((options) => {
+    return (
+      <div
+        key={options.value}
+        className="item"
+        onClick={() => onSelectedChange(options)}
+      >
+        {options.label}
+      </div>
+    );
+  });
 
-const Dropdown = ({options}) => { 
+  return (
+    <div className="ui form">
+      <div className="field">
+        <label className="label">Select a Color</label>
+        <div className="ui selection dropdown visible active">
+          <i className="dropdown icon"></i>
+          <div className="text">{selected.label}</div>
 
-    const renderedOptions = options.map( (options) => { 
-        return ( 
-            <div key={options.value} className='item' >
-                {options.label}
-            </div>
-        );
-    });
-    
-    return ( 
-        <div className='ui form'></div>
-    )
+          <div className="menu visible transition">{renderedOptions}</div>
+        </div>
+      </div>
+    </div>
+  );
 };
-
 
 export default Dropdown;
