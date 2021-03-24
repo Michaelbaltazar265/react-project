@@ -32,6 +32,10 @@ const options= [
     { 
         label: "A Shade of Blue", 
         value: 'blue'
+    },
+    { 
+        label: "A Shade of Purple", 
+        value: 'purple'
     }
 ]
 
