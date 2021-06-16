@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Color from './App';
 import {createStore,combineReducers} from 'redux';
 
 
@@ -269,6 +269,6 @@ console.log(myStore4.getState());
 
 ReactDOM.render(
    
-<App/>
+<Color/>
 
 ,document.getElementById('root'));
